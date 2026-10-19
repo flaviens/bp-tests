@@ -24,7 +24,7 @@ all: $(foreach x,$(subst -,_,$(BP_TESTS)),$(x).riscv)
 %.riscv: %.S
 	$(RISCV_GCC) -o $@ $^ $(RISCV_GCC_OPTS) $(RISCV_LINK_OPTS)
 
-mprv_debug_page.riscv: mprv_debug_page.S
+mprv_debug_page.riscv debug_halt_s_mode.riscv: %.riscv: %.S
 	$(RISCV_GCC) -o $@ $^ -march=$(WITH_MARCH) -mabi=$(WITH_MABI) -mcmodel=medany -nostdlib -nostartfiles -T src/mprv_debug_page.ld
 
 %.riscv: %.cpp

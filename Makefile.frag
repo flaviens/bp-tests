@@ -61,6 +61,18 @@ BP_TESTS_C = \
   mstatus_legalization  \
   s_mideleg             \
   fencei_coherence      \
+  debug_csr_m_mode      \
+  debug_halt_s_mode     \
+  fp_reserved_rm        \
+  reserved_encodings    \
+  bitmanip_disabled     \
+  hpm_counters_m_mode   \
+  fcvt_snan_nv          \
+  fs_dirty_fp_load      \
+  tval_straddle_page_fault \
+  tval_compressed_illegal \
+  minstret_read_hazard  \
+  tval_upper_bits       \
 
 BP_MULTICORE_TESTS_C = \
   mc_sanity             \
