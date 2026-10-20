@@ -73,6 +73,7 @@ BP_TESTS_C = \
   tval_compressed_illegal \
   minstret_read_hazard  \
   tval_upper_bits       \
+  jump_upper_bits       \
 
 BP_MULTICORE_TESTS_C = \
   mc_sanity             \
